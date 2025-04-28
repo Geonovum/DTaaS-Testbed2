@@ -9,11 +9,11 @@ var documentConfig =
 //   publishDate: "2024-06-21",
   publishVersion: "0.1.0",
   thisVersion: [
-    "https://geonovum.github.io/DTaaS-Testbed2/engineeringReport"
+    "https://geonovum.github.io/DTaaS-Testbed2"
   ],
   github: "https://github.com/geonovum/DTaaS-Testbed2/",
   issueBase: "https://github.com/geonovum/DTaaS-Testbed2/issues/",
-  edDraftURI: "https://geonovum.github.io/DTaaS-Testbed2/engineeringReport",
+  edDraftURI: "https://geonovum.github.io/DTaaS-Testbed2",
   authors: [
     {
       name: "Bart De Lathouwer",
