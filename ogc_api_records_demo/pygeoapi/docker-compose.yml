@@ -1,0 +1,21 @@
+
+
+services:
+  pygeoapi:
+    build: .
+
+    container_name: pygeoapi_records
+
+    ports:
+      - 5000:80
+
+    volumes:
+      - ./pygeoapi.config.yml:/pygeoapi/local.config.yml
+      - ./data:/data
+      - ./plugins/process/localoutlier.py:/pygeoapi/pygeoapi/process/localoutlier.py
+
+
+networks:
+  default:
+    name: pygeoapi_records
+    driver: bridge
