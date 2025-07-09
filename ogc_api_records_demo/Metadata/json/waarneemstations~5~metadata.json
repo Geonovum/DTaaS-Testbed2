@@ -1,0 +1,104 @@
+{
+    "id": "7b03a8de-5d0c-11ee-8a7e-3ce9f7462b93",
+    "conformsTo": [
+        "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core"
+    ],
+    "type": "Feature",
+    "time": [
+        "2023-09-28",
+        "9999-12-31"
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -68.5,
+                    12.0
+                ],
+                [
+                    -68.5,
+                    55.7
+                ],
+                [
+                    7.4,
+                    55.7
+                ],
+                [
+                    7.4,
+                    12.0
+                ],
+                [
+                    -68.5,
+                    12.0
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "issued": "2023-09-28",
+        "accrualPeriodicity": "<http://publications.europa.eu/resource/authority/frequency/IRREG>",
+        "type": "dcat:Dataset",
+        "title": "Meteo data - information on stations in the KNMI observations network",
+        "description": "KNMI collects observations from the automatic weather stations situated in the Netherlands and BES islands on locations such as aerodromes, North Sea platforms and wind poles. This dataset provides metadata on these weather stations, such as location, name and type.\n\nThe data in this dataset is formatted as NetCDF. It is also available as a CSV file in this dataset: https://dataplatform.knmi.nl/dataset/waarneemstations-csv-1-0.",
+        "contactPoint": [
+            {
+                "contactInfo": {
+                    "address": {
+                        "office": {}
+                    },
+                    "email": {
+                        "office": "opendata@knmi.nl"
+                    }
+                },
+                "name": null,
+                "roles": [
+                    {
+                        "name": "pointOfContact"
+                    }
+                ]
+            }
+        ],
+        "identifier": "urn:xkdc:ds:nl.knmi::waarneemstations/5/",
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "Observation station"
+                    },
+                    {
+                        "id": "Sensors"
+                    },
+                    {
+                        "id": "Network"
+                    }
+                ],
+                "scheme": null
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "Inspire dataset"
+                    }
+                ]
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "Environmental monitoring facilities"
+                    }
+                ],
+                "scheme": null
+            }
+        ],
+        "_metadata-anytext": "7b03a8de-5d0c-11ee-8a7e-3ce9f7462b93 Koninklijk Nederlands Meteorologisch Instituut (KNMI) opendata@knmi.nl ISO 19115 ISO 19115:2003 NL Kernset 1.3 KNMI 2.1.0 http://www.opengis.net/def/crs/EPSG/0/4326 Meteo data - information on stations in the KNMI observations network 5 urn:xkdc:ds:nl.knmi::waarneemstations/5/ KNMI collects observations from the automatic weather stations situated in the Netherlands and BES islands on locations such as aerodromes, North Sea platforms and wind poles. This dataset provides metadata on these weather stations, such as location, name and type.\n\nThe data in this dataset is formatted as NetCDF. It is also available as a CSV file in this dataset: https://dataplatform.knmi.nl/dataset/waarneemstations-csv-1-0. Koninklijk Nederlands Meteorologisch Instituut (KNMI) opendata@knmi.nl Observation station Sensors Network DG Discovery Properties Vocabulary 1.0 Inspire dataset Environmental monitoring facilities GEMET - INSPIRE themes, version 1.0 No use limitations https://creativecommons.org/licenses/by/4.0/deed.nl NetCDF 4 CF Koninklijk Nederlands Meteorologisch Instituut (KNMI) opendata@knmi.nl landingpage KNMI Data Platform Station archive KNMI"
+    },
+    "links": [
+        {
+            "href": "https://dataplatform.knmi.nl/catalog/datasets/index.html?x-dataset=waarneemstations&x-dataset-version=5",
+            "rel": "item",
+            "title": "KNMI Data Platform",
+            "type": "landingpage"
+        }
+    ]
+}

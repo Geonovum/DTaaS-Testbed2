@@ -1,0 +1,88 @@
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcatapnl: <http://modellen.geostandaarden.nl/dcat-ap-nl/> .
+
+<http://publications.europa.eu/resource/authority/frequency/IRREG> a dcterms:Frequency .
+
+<http://www.opengis.net/def/crs/EPSG/0/4326> a dcterms:Standard ;
+    dcterms:type <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> .
+
+<https://dataplatform.knmi.nl/catalog/datasets/index.html?x-dataset=waarneemstations&x-dataset-version=5> a foaf:Document ;
+    dcterms:title "KNMI Data Platform"@en .
+
+<http://publications.europa.eu/resource/authority/language/ENG> a dcterms:LinguisticSystem .
+
+<http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> a dcat:Role .
+
+[] a dcat:Dataset ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcterms:description "KNMI collects observations from the automatic weather stations situated in the Netherlands and BES islands on locations such as aerodromes, North Sea platforms and wind poles. This dataset provides metadata on these weather stations, such as location, name and type. The data in this dataset is formatted as NetCDF. It is also available as a CSV file in this dataset: https://dataplatform.knmi.nl/dataset/waarneemstations-csv-1-0."@en,
+        "Het KNMI verzamelt gegevens van automatische waarneemstations in Nederland en BES eilanden op locaties zoals luchthavens (Aerodrome), Noordzee platformen en windpalen. Deze dataset bevat de metadata van de weerstations, zoals locatie, naam en type. De data in deze dataset is beschikbaar in NetCDF formaat. De data is ook beschikbaar als CSV bestand in de volgende dataset: https://dataplatform.knmi.nl/dataset/waarneemstations-csv-1-0."@nl ;
+    dcterms:identifier "urn:xkdc:ds:nl.knmi::waarneemstations/5/"^^xsd:anyURI ;
+    dcterms:issued "2023-09-28"^^xsd:date ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcterms:provenance [ a dcterms:ProvenanceStatement ;
+            dcterms:description "Station archive KNMI"@en,
+                "Stationsarchief KNMI"@nl ] ;
+    dcterms:spatial [ a dcterms:Location ;
+            dcat:bbox "{\"type\":\"Polygon\",\"coordinates\":[[[-68.5,55.7],[7.4,55.7],[7.4,12],[-68.5,12],[-68.5,55.7]]]}"^^geo:geoJSONLiteral ] ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ;
+            schema1:endDate "9999-12-31"^^xsd:date ;
+            schema1:startDate "2023-09-28"^^xsd:date ;
+            dcat:endDate "9999-12-31"^^xsd:date ;
+            dcat:startDate "2023-09-28"^^xsd:date ] ;
+    dcterms:title "Meteo data - information on stations in the KNMI observations network"@en,
+        "Meteo data - informatie over waarneemstations in het KNMI netwerk"@nl ;
+    dcat:contactPoint [ a vcard:Organization, vcard:Kind ;
+            vcard:fn "Koninklijk Nederlands Meteorologisch Instituut (KNMI)"@en,
+                "Koninklijk Nederlands Meteorologisch Instituut (KNMI)"@nl ;
+            vcard:hasEmail <mailto:opendata@knmi.nl> ] ;
+    dcat:keyword "Inspire dataset"@en,
+        "Inspire dataset"@nl ;
+    dcat:landingPage <https://dataplatform.knmi.nl/catalog/datasets/index.html?x-dataset=waarneemstations&x-dataset-version=5> ;
+    dcat:theme [ a skos:Concept ;
+            skos:inScheme [ a skos:ConceptScheme ;
+                    dcterms:issued "2013-01-01"^^xsd:date ;
+                    dcterms:title "DG Discovery Properties Vocabulary 1.0"@en ] ;
+            skos:prefLabel "Observation station"@en,
+                "Waarneemstation"@nl ],
+        [ a skos:Concept ;
+            skos:inScheme [ a skos:ConceptScheme ;
+                    dcterms:issued "2008-06-01"^^xsd:date ;
+                    dcterms:title "GEMET - INSPIRE themes, version 1.0"@en ] ;
+            skos:prefLabel "Environmental monitoring facilities"@en,
+                "Milieubewakingsvoorzieningen"@nl ],
+        [ a skos:Concept ;
+            skos:inScheme [ a skos:ConceptScheme ;
+                    dcterms:issued "2013-01-01"^^xsd:date ;
+                    dcterms:title "DG Discovery Properties Vocabulary 1.0"@en ] ;
+            skos:prefLabel "Network"@en,
+                "Netwerk"@nl ],
+        [ a skos:Concept ;
+            skos:inScheme [ a skos:ConceptScheme ;
+                    dcterms:issued "2013-01-01"^^xsd:date ;
+                    dcterms:title "DG Discovery Properties Vocabulary 1.0"@en ] ;
+            skos:prefLabel "Sensors"@en,
+                "Sensoren"@nl ] ;
+    dcat:spatialResolutionInMeters "1"^^xsd:decimal ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+            dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+            prov:agent [ a prov:Agent,
+                        foaf:Organization ;
+                    foaf:mbox <mailto:opendata@knmi.nl> ;
+                    foaf:name "Koninklijk Nederlands Meteorologisch Instituut (KNMI)"@en,
+                        "Koninklijk Nederlands Meteorologisch Instituut (KNMI)"@nl ] ] ;
+    .
+
