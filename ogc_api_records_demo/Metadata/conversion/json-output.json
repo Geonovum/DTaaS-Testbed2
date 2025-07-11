@@ -1,0 +1,105 @@
+{
+  "type": "Feature",
+  "id": "urn:xkdc:ds:nl.knmi::waarneemstations/5/",
+  "geometry": null,
+  "properties": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset",
+    "dcterms:accrualPeriodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+    "description": {
+      "en": "KNMI collects observations from the automatic weather stations situated in the Netherlands and BES islands on locations such as aerodromes, North Sea platforms and wind poles. This dataset provides metadata on these weather stations, such as location, name and type. The data in this dataset is formatted as NetCDF. It is also available as a CSV file in this dataset: https://dataplatform.knmi.nl/dataset/waarneemstations-csv-1-0.",
+      "nl": "Het KNMI verzamelt gegevens van automatische waarneemstations in Nederland en BES eilanden op locaties zoals luchthavens (Aerodrome), Noordzee platformen en windpalen. Deze dataset bevat de metadata van de weerstations, zoals locatie, naam en type. De data in deze dataset is beschikbaar in NetCDF formaat. De data is ook beschikbaar als CSV bestand in de volgende dataset: https://dataplatform.knmi.nl/dataset/waarneemstations-csv-1-0."
+    },
+    "dcterms:identifier": "urn:xkdc:ds:nl.knmi::waarneemstations/5/",
+    "issued": "2023-09-28",
+    "language": "http://publications.europa.eu/resource/authority/language/ENG",
+    "provenance": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/ProvenanceStatement",
+      "dcterms:description": {
+        "en": "Station archive KNMI",
+        "nl": "Stationsarchief KNMI"
+      }
+    },
+    "dcterms:spatial": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location",
+      "dcat:bbox": "POLYGON((3.3130 50.7500, 7.2275 50.7500, 7.2275 53.6755, 3.3130 53.6755, 3.3130 50.7500))"
+    },
+    "temporalExtent": {
+      "startDate": "2023-09-28",
+      "endDate": "9999-12-31"
+    },
+    "title": {
+      "en": "Meteo data - information on stations in the KNMI observations network",
+      "nl": "Meteo data - informatie over waarneemstations in het KNMI netwerk"
+    },
+    "contactPoint": {
+      "organizationName": null,
+      "email": null
+    },
+    "keywords": [
+      "Inspire dataset",
+      "Inspire dataset"
+    ],
+    "themes": [
+      {
+        "prefLabel": {
+          "en": "Observation station",
+          "nl": "Waarneemstation"
+        },
+        "inScheme": {
+          "title": {
+            "en": "DG Discovery Properties Vocabulary 1.0"
+          }
+        }
+      },
+      {
+        "prefLabel": {
+          "en": "Environmental monitoring facilities",
+          "nl": "Milieubewakingsvoorzieningen"
+        },
+        "inScheme": {
+          "title": {
+            "en": "GEMET - INSPIRE themes, version 1.0"
+          }
+        }
+      },
+      {
+        "prefLabel": {
+          "en": "Network",
+          "nl": "Netwerk"
+        },
+        "inScheme": {
+          "title": {
+            "en": "DG Discovery Properties Vocabulary 1.0"
+          }
+        }
+      },
+      {
+        "prefLabel": {
+          "en": "Sensors",
+          "nl": "Sensoren"
+        },
+        "inScheme": {
+          "title": {
+            "en": "DG Discovery Properties Vocabulary 1.0"
+          }
+        }
+      }
+    ],
+    "spatialResolutionInMeters": 1.0,
+    "publisher": {
+      "name": {
+        "en": "Koninklijk Nederlands Meteorologisch Instituut (KNMI)",
+        "nl": "Koninklijk Nederlands Meteorologisch Instituut (KNMI)"
+      },
+      "email": "mailto:opendata@knmi.nl"
+    }
+  },
+  "links": [
+    {
+      "rel": "about",
+      "href": "https://dataplatform.knmi.nl/catalog/datasets/index.html?x-dataset=waarneemstations&x-dataset-version=5",
+      "type": "text/html",
+      "title": "Meteo data - information on stations in the KNMI observations network"
+    }
+  ]
+}
