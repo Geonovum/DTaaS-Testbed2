@@ -1,0 +1,86 @@
+{
+  "type": "Feature",
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
+    "http://modellen.geostandaarden.nl/dcat-ap-nl/"
+  ],
+  "id": "dataset-wegvakken",
+  "geometry": null,
+  "properties": {
+    "creator": {
+      "name": "Goudappel B.V.",
+      "email": null
+    },
+    "description": {
+      "nl": "Dataset met verkeersintensiteiten per wegvak, gebaseerd op het MobiliteitsSpectrum en NVP."
+    },
+    "dcterms:identifier": "dataset-wegvakken",
+    "issued": "2025-04-29",
+    "language": {
+      "@id": "http://id.loc.gov/vocabulary/iso639-1/nl",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/LinguisticSystem"
+    },
+    "license": {
+      "href": "https://mobilitytwin.goudappel.nl/commercial-license",
+      "title": "Commercial License"
+    },
+    "publisher": {
+      "name": "Goudappel B.V.",
+      "email": null
+    },
+    "dcterms:spatial": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location",
+      "dcat:bbox": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.313,
+              50.75
+            ],
+            [
+              7.2275,
+              50.75
+            ],
+            [
+              7.2275,
+              53.6755
+            ],
+            [
+              3.313,
+              53.6755
+            ],
+            [
+              3.313,
+              50.75
+            ]
+          ]
+        ]
+      }
+    },
+    "temporalExtent": {
+      "startDate": "2024-01-01T00:00:00+00:00",
+      "endDate": "2028-01-01T00:00:00+00:00"
+    },
+    "title": {
+      "nl": "Verkeersintensiteiten op wegvakken"
+    },
+    "distributions": [],
+    "keywords": [
+      "NWB",
+      "auto",
+      "fiets",
+      "intensiteiten",
+      "personenvervoer",
+      "voetganger",
+      "wegvakken"
+    ],
+    "themes": [
+      {
+        "prefLabel": {
+          "en": "Transport"
+        }
+      }
+    ]
+  }
+}

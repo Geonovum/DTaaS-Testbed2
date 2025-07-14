@@ -1,0 +1,78 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gd: <http://goudappel.nl/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/Hieriets> dcterms:conformsTo <https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/> .
+
+gd:api-distributie a dcat:Distribution ;
+    dcterms:conformsTo <https://mobilitytwin.goudappel.nl/resources/wegvakken-schema.ttl> ;
+    dcterms:description "Een distributie van verkeersintensiteiten als GeoJSON via een RESTful API."@nl ;
+    dcterms:format <https://www.iana.org/assignments/media-types/application/geo+json> ;
+    dcterms:identifier "distribution-wegvakken-api" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Bestand met verkeersintensiteiten"@nl ;
+    dcat:accessService gd:mobilitytwin-api ;
+    dcat:accessURL <https://mobilitytwin.goudappel.nl/collections/segments/items> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/geo+json> ;
+    odrl:hasPolicy <https://mobilitytwin.goudappel.nl/resources/gmt.odrl> .
+
+gd:dataset-wegvakken a dcat:Dataset ;
+    dcterms:creator gd: ;
+    dcterms:description "Dataset met verkeersintensiteiten per wegvak, gebaseerd op het MobiliteitsSpectrum en NVP."@nl ;
+    dcterms:identifier "dataset-wegvakken" ;
+    dcterms:issued "2025-04-29"^^xsd:date ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcterms:license <https://mobilitytwin.goudappel.nl/commercial-license> ;
+    dcterms:publisher gd: ;
+    dcterms:spatial [ a dcterms:Location ;
+            dcat:bbox """
+          POLYGON((3.3130 50.7500, 7.2275 50.7500, 7.2275 53.6755, 3.3130 53.6755, 3.3130 50.7500))
+        """^^geo:wktLiteral ] ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ;
+            dcterms:endDate "2028-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            dcterms:startDate "2024-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
+    dcterms:title "Verkeersintensiteiten op wegvakken"@nl ;
+    dcat:distribution gd:api-distributie ;
+    dcat:keyword "NWB",
+        "auto",
+        "fiets",
+        "intensiteiten",
+        "personenvervoer",
+        "voetganger",
+        "wegvakken" ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
+
+gd:mobilitytwin-api a dcat:DataService ;
+    dcterms:conformsTo <http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core> ;
+    dcterms:description "RESTful webservice die GeoJSON-data levert met verkeersintensiteiten per wegvak."@nl ;
+    dcterms:identifier "mobilitytwin-api" ;
+    dcterms:publisher gd: ;
+    dcterms:title "MobilityTwin API"@nl ;
+    dcat:endpointURL <https://mobilitytwin.goudappel.nl/collections/segments/items> ;
+    dcat:keyword "verkeersdata" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/geo+json> ;
+    dcat:servesDataset gd:dataset-wegvakken .
+
+<http://id.loc.gov/vocabulary/iso639-1/nl> a dcterms:LinguisticSystem .
+
+<http://publications.europa.eu/resource/authority/data-theme/TRAN> a skos:Concept ;
+    skos:prefLabel "Transport"@en .
+
+<https://mobilitytwin.goudappel.nl/commercial-license> a dcterms:LicenseDocument ;
+    dcterms:title "Commercial License" .
+
+<https://mobilitytwin.goudappel.nl/resources/gmt.odrl> a odrl:Policy .
+
+<https://mobilitytwin.goudappel.nl/resources/wegvakken-schema.ttl> a dcterms:Standard ;
+    dcterms:title "Wegvakken GeoJSON Schema" .
+
+gd: a foaf:Organization ;
+    foaf:name "Goudappel B.V." .
+
+<https://www.iana.org/assignments/media-types/application/geo+json> a dcterms:MediaType .
+

@@ -27,5 +27,9 @@ https://github.com/Geonovum/DTaaS-Testbed2/wiki
 
 https://github.com/Geonovum/DTaaS-Testbed2/discussions
 
+## ogc_api_records_demo
 
+This folder contains a demo configuration of pygeoapi with an API Records and API Features configuration. (pygeoapi folder)
+
+It also contains some example code to convert a DCAT Turtle file to the OGC API Records GeoJSON representation to load into the tinyDB database for pygeoapi (Metadata folder)
 
