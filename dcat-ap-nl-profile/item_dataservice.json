@@ -1,0 +1,19 @@
+{
+    "type":"Feature",
+    "conformsTo":[
+        "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
+        "http://modellen.geostandaarden.nl/dcat-ap-nl/"
+    ],
+    "id":"urn:xkdc:ds:nl.knmi::waarneemstations/5/Dataservice",
+    "geometry":null,
+    "properties":{
+        "type": "dcat:Dataservice",
+        "servesDataset": "urn:xkdc:ds:nl.knmi::waarneemstations/5/",
+        "conformsTo": "https://ogcapi.ogc.org/features/",
+        "endpointDescription ": "http://localhost:5000/collections/knmi_meetstations",
+        "endpointURL":  "http://localhost:5000/collections/knmi_meetstations/items"
+    },
+    "links":[
+        
+    ]
+}

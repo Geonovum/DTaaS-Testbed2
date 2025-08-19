@@ -1,0 +1,31 @@
+{
+    "type":"Feature",
+    "conformsTo":[
+        "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
+        "http://modellen.geostandaarden.nl/dcat-ap-nl/"
+    ],
+    "id":"urn:xkdc:ds:nl.knmi::waarneemstations/5/Distribution",
+    "geometry":null,
+    "properties":{
+        "type": "dcat:Distribution",
+        "accessService": "urn:xkdc:ds:nl.knmi::waarneemstations/5/Dataservice",
+        "accessURL":  "https://dataplatform.knmi.nl/catalog/datasets/index.html?x-dataset=waarneemstations&x-dataset-version=5",
+        "applicableLegislation" : "http://data.europa.eu/eli/reg_impl/2023/138/oj",
+        "downloadURL": "https://api.dataplatform.knmi.nl/open-data/v1/datasets/waarneemstations/versions/5/files",
+        "language": "http://publications.europa.eu/resource/authority/language/NLD",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "mediaType": "https://www.iana.org/assignments/media-types/text/csv"
+    },
+    "links":[
+        {
+            "rel":"alternate",
+            "type":"text/html",
+            "href":"https://dataplatform.knmi.nl/dataset/waarneemstations-csv-1-0"
+        },
+        {
+            "rel":"self",
+            "type":"application/geo+json",
+            "href":""
+        }
+    ]
+}
