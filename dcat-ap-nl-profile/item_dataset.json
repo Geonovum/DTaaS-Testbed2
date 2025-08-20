@@ -4,7 +4,7 @@
         "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
         "http://modellen.geostandaarden.nl/dcat-ap-nl/"
     ],
-    "id":"urn:xkdc:ds:nl.knmi::waarneemstations/5/",
+    "id":"urn:xkdc:ds:nl.knmi::waarneemstations",
     "geometry":null,
     "properties":{
         "type": "dcat:Dataset",
@@ -179,19 +179,19 @@
             "rel":"self",
             "type":"application/geo+json",
             "title":"This document as JSON",
-            "href":"http://localhost:5000/collections/catalog/items/urn:xkdc:ds:nl.knmi::waarneemstations/5/?f=json"
+            "href":"http://localhost:5000/collections/catalog/items/urn:xkdc:ds:nl.knmi::waarneemstations?f=json"
         },
         {
             "rel":"alternate",
             "type":"application/ld+json",
             "title":"This document as RDF (JSON-LD)",
-            "href":"http://localhost:5000/collections/catalog/items/urn:xkdc:ds:nl.knmi::waarneemstations/5/?f=jsonld"
+            "href":"http://localhost:5000/collections/catalog/items/urn:xkdc:ds:nl.knmi::waarneemstations?f=jsonld"
         },
         {
             "rel":"alternate",
             "type":"text/html",
             "title":"This document as HTML",
-            "href":"http://localhost:5000/collections/catalog/items/urn:xkdc:ds:nl.knmi::waarneemstations/5/?f=html"
+            "href":"http://localhost:5000/collections/catalog/items/urn:xkdc:ds:nl.knmi::waarneemstations?f=html"
         },
         {
             "rel":"collection",

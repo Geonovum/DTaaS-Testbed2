@@ -4,16 +4,33 @@
         "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core",
         "http://modellen.geostandaarden.nl/dcat-ap-nl/"
     ],
-    "id":"urn:xkdc:ds:nl.knmi::waarneemstations/5/Dataservice",
+    "id":"urn:xkdc:ds:nl.knmi::waarneemstations/Dataservice",
     "geometry":null,
     "properties":{
         "type": "dcat:Dataservice",
-        "servesDataset": "urn:xkdc:ds:nl.knmi::waarneemstations/5/",
+        "servesDataset": "urn:xkdc:ds:nl.knmi::waarneemstations",
         "conformsTo": "https://ogcapi.ogc.org/features/",
         "endpointDescription ": "http://localhost:5000/collections/knmi_meetstations",
-        "endpointURL":  "http://localhost:5000/collections/knmi_meetstations/items"
+        "endpointURL":  "http://localhost:5000/collections/knmi_meetstations/items",
+        "title": "Waarneemstations - Dataservice"
     },
     "links":[
-        
+        {
+            "rel":"self",
+            "type":"application/geo+json",
+            "href":"http://localhost:5000/collections/catalog/items/urn:xkdc:ds:nl.knmi::waarneemstations/5/Dataservice?f=json"
+        },
+        {
+            "type":"application/json",
+            "rel":"root",
+            "title":"The landing page of this server as JSON",
+            "href":"http://localhost:5000?f=json"
+        },
+        {
+            "type":"text/html",
+            "rel":"root",
+            "title":"The landing page of this server as HTML",
+            "href":"http://localhost:5000?f=html"
+        }
     ]
 }
