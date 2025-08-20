@@ -7,6 +7,7 @@
   "id": "urn:xkdc:ds:nl.knmi::waarneemstations/5/",
   "geometry": null,
   "properties": {
+    "type": "dcat:Dataset",
     "dcterms:accrualPeriodicity": {
       "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG",
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Frequency"
