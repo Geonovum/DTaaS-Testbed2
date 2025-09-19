@@ -5,62 +5,87 @@
     "http://modellen.geostandaarden.nl/dcat-ap-nl/"
   ],
   "id": "urn:ogc:record:generated-id",
-  "geometry": null,
+  "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.4807,
+                53.7187
+              ],
+              [
+                7.9685,
+                53.7187
+              ],
+              [
+                7.9685,
+                50.6058
+              ],
+              [
+                2.4807,
+                50.6058
+              ],
+              [
+                2.4807,
+                53.7187
+              ]
+            ]
+          ]
+        },
   "properties": {
-    "rdf:type": [
-      "http://www.w3.org/ns/dcat#Dataset",
-      "http://www.w3.org/ns/dcat#Resource",
-      "http://www.w3.org/ns/prov#Entity"
+    "type": [
+      "http://www.w3.org/ns/dcat#Dataset"
     ],
-    "dcat:contactPoint": {
-      "organizationName": {
+    "contactPoint": {
+      "type": [
+        "http://www.w3.org/2006/vcard/ns#Individual",
+        "http://www.w3.org/2006/vcard/ns#Kind"
+      ],
+      "fn": {
         "nl": "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"
       },
-      "email": "mailto:dpi-gi@kadaster.nl"
+      "hasAddress": {
+        "type": "http://www.w3.org/2006/vcard/ns#Address",
+        "country-name": "Nederland",
+        "locality": "Apeldoorn",
+        "postal-code": "7311 KZ",
+        "region": "Gelderland",
+        "street-address": "Hofstraat 110"
+      },
+      "hasEmail": "mailto:dpi-gi@kadaster.nl",
+      "hasURL": "https://www.kadaster.nl",
+      "organization-name": {
+        "nl": "Kadaster"
+      }
     },
-    "dcterms:accrualPeriodicity": {
-      "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY",
-      "rdf:type": "http://purl.org/dc/terms/Frequency"
-    },
-    "dcterms:accessRights": {
-      "@id": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
-      "rdf:type": [
-        "http://purl.org/dc/terms/LicenseDocument",
-        "http://purl.org/dc/terms/RightsStatement"
-      ]
-    },
-    "dcterms:conformsTo": {
-      "rdf:type": "http://purl.org/dc/terms/Standard",
-      "dcterms:issued": "2010-12-08",
-      "dcterms:title": {
+    "accrualPeriodicity": "http://publications.europa.eu/resource/authority/frequency/DAILY",
+    "accessRights": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+    "conformsTo": {
+      "type": "http://purl.org/dc/terms/Standard",
+      "issued": "2010-12-08",
+      "title": {
         "nl": "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"
       }
     },
-    "dcterms:created": "2013-02-18",
-    "dcterms:description": {
+    "created": "2013-02-18",
+    "description": {
       "nl": "De gegevens bestaan uit BAG-panden en een deelselectie van BAG-gegevens van deze panden en de zich daarin bevindende verblijfsobjecten. Ook de ligplaatsen en standplaatsen zijn hierin opgenomen met een deelselectie van BAG-gegevens. De gegevens van de nummeraanduiding zijn in deze services onderdeel van de adresseerbare objecten, hierbij wordt slechts 1 adres opgenomen, dus objecten met meerdere adressen (hoofd- en nevenadressen) zijn niet compleet. In deze services zitten dus niet alle BAG adressen. Aangezien niet alle BAG gegevens worden geleverd, adviseren wij u om de actuele gegevens in één van de BAG producten te controleren. Raadpleeg de BAG Viewer voor enkele bevragingen van BAG gegevens. Een overzicht van alle beschikbare producten kunt u vinden op de website https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag . De BAG WMS, BAG WFS en BAG API Individuele bevragingen zijn expliciet niet bedoeld voor bulkbevragingen waarmee veel gegevens in één keer worden opgevraagd en in een database worden verwerkt. Wilt u in één keer meer gegevens opvragen, dan raden wij u aan om gebruik te maken van onze BAG Geopackage (https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-geopackage) of BAG extract (https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-2.0-extract). De BAG Geopackage en de BAG extract kunt u downloaden via de Atom downloadservice: https://service.pdok.nl/lv/bag/atom/bag.xml . Deze dataset wordt ook gebruikt voor het ontsluiten van het INSPIRE thema Gebouwen. Het betreft gebouwcontouren, constructieve onderdelen van gebouwen en ruimtelijke barrieres. Dit betreft niet-geharmoniseerde data uit de basisregistratie Adressen en Gebouwen (BAG). De service wordt dagelijks geactualiseerd."
     },
-    "dcterms:identifier": "1fa33d90-79cb-11e2-b92a-0800200c9a66",
-    "dcterms:language": {
-      "@id": "http://publications.europa.eu/resource/authority/language/DUT",
-      "rdf:type": "http://purl.org/dc/terms/LinguisticSystem"
+    "identifier": "1fa33d90-79cb-11e2-b92a-0800200c9a66",
+    "language": "http://publications.europa.eu/resource/authority/language/DUT",
+    "provenance": {
+      "nl": "Ontwikkeld uit de Basisregistratie Adressen en Gebouwen (BAG)"
     },
-    "dcterms:provenance": {
-      "rdf:type": "http://purl.org/dc/terms/ProvenanceStatement",
-      "dcterms:description": {
-        "nl": "Ontwikkeld uit de Basisregistratie Adressen en Gebouwen (BAG)"
-      }
-    },
-    "dcterms:spatial": [
+    "spatial": [
       {
-        "rdf:type": "http://purl.org/dc/terms/Location",
-        "skos:prefLabel": {
+        "type": "http://purl.org/dc/terms/Location",
+        "prefLabel": {
           "nl": "Nederland"
         }
       },
       {
-        "rdf:type": "http://purl.org/dc/terms/Location",
-        "dcat:bbox": {
+        "type": "http://purl.org/dc/terms/Location",
+        "bbox": {
           "type": "Polygon",
           "coordinates": [
             [
@@ -89,20 +114,21 @@
         }
       }
     ],
-    "dcterms:temporal": {
-      "dcat:startDate": "1996-01-01",
-      "dcat:endDate": "2025-12-31"
+    "temporal": {
+      "type": "http://purl.org/dc/terms/PeriodOfTime",
+      "endDate": "2025-12-31",
+      "startDate": "1996-01-01"
     },
-    "dcterms:title": {
+    "title": {
       "nl": "Basisregistratie Adressen en gebouwen (BAG)"
     },
-    "dcterms:publisher": {
+    "publisher": {
+      "type":  "http://purl.org/adms/publishertype/LocalAuthority",
       "name": {
-        "nl": "Klantcontactcenter"
+        "nl": "Kadaster"
+        }
       },
-      "email": "mailto:bag@kadaster.nl"
-    },
-    "dcterms:creator": {
+    "creator": {
       "name": {
         "nl": "Kadaster"
       },
@@ -111,117 +137,113 @@
     "distributions": [
       {
         "type": "dcat:Distribution",
-        "dcterms:title": {
+        "title": {
           "nl": "BAG (WMS)"
         },
-        "dcterms:description": {
+        "description": {
           "nl": "accessPoint"
         },
-        "dcat:accessURL": "https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS",
-        "dcat:mediaType": null,
-        "dcterms:format": null,
-        "dcterms:license": {
-          "@id": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
-          "rdf:type": [
-            "http://purl.org/dc/terms/LicenseDocument",
-            "http://purl.org/dc/terms/RightsStatement"
-          ]
-        },
-        "dcat:accessService": {
+        "accessURL": "https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS",
+        "mediaType": null,
+        "format": null,
+        "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+        "accessService": {
           "@id": "http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/DS/d0e1000",
-          "rdf:type": "http://www.w3.org/ns/dcat#DataService",
-          "dcterms:description": {
+          "type": "http://www.w3.org/ns/dcat#DataService",
+          "description": {
             "nl": "accessPoint"
           },
-          "dcterms:license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
-          "dcat:theme": [
+          "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+          "theme": [
             {
-              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
-              "dcterms:source": "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021",
-              "skos:prefLabel": {
+              "type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "source": "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021",
+              "prefLabel": {
                 "nl": "Geodata"
               }
             },
             {
-              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
-              "dcterms:source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/ad",
-              "skos:prefLabel": {
+              "type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/ad",
+              "prefLabel": {
                 "nl": "Adressen"
               }
             },
             {
-              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
-              "dcterms:source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/bu",
-              "skos:prefLabel": {
+              "type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/bu",
+              "prefLabel": {
                 "nl": "Gebouwen"
               }
             },
             {
-              "rdf:type": "http://www.w3.org/2004/02/skos/core#Concept",
-              "dcterms:source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
-              "skos:prefLabel": {
+              "type": "http://www.w3.org/2004/02/skos/core#Concept",
+              "source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+              "prefLabel": {
                 "nl": "Nationaal"
               }
             }
           ],
-          "dcterms:accessRights": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
-          "dcat:contactPoint": {
-            "rdf:type": [
+          "accessRights": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+          "contactPoint": {
+            "type": [
               "http://www.w3.org/2006/vcard/ns#Individual",
               "http://www.w3.org/2006/vcard/ns#Kind"
             ],
-            "vcard:fn": {
+            "fn": {
               "nl": "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"
             },
-            "vcard:hasAddress": {
-              "rdf:type": "http://www.w3.org/2006/vcard/ns#Address",
-              "vcard:country-name": "Nederland",
-              "vcard:locality": "Apeldoorn",
-              "vcard:postal-code": "7311 KZ",
-              "vcard:region": "Gelderland",
-              "vcard:street-address": "Hofstraat 110"
+            "hasAddress": {
+              "type": "http://www.w3.org/2006/vcard/ns#Address",
+              "country-name": "Nederland",
+              "locality": "Apeldoorn",
+              "postal-code": "7311 KZ",
+              "region": "Gelderland",
+              "street-address": "Hofstraat 110"
             },
-            "vcard:hasEmail": "mailto:dpi-gi@kadaster.nl",
-            "vcard:hasURL": "https://www.kadaster.nl",
-            "vcard:organization-name": {
+            "hasEmail": "mailto:dpi-gi@kadaster.nl",
+            "hasURL": "https://www.kadaster.nl",
+            "organization-name": {
               "nl": "Kadaster"
             }
           },
-          "dcterms:publisher": {
-            "dcterms:type": "http://purl.org/adms/publishertype/LocalAuthority",
-            "rdf:type": "http://xmlns.com/foaf/0.1/Agent",
-            "foaf:name": {
+          "publisher": {
+            "type": [
+              "http://purl.org/adms/publishertype/LocalAuthority",
+              "http://xmlns.com/foaf/0.1/Agent"
+            ],
+            "name": {
               "nl": "Kadaster"
             }
           },
-          "dcterms:identifier": "http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/DS/d0e1000",
-          "dcterms:title": {
+          "identifier": "http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/DS/d0e1000",
+          "title": {
             "nl": "BAG (WMS)"
           },
-          "dcat:endpointDescription": "https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS",
-          "dcat:endpointURL": "https://service.pdok.nl/lv/bag/wms/v2_0"
+          "endpointDescription": "https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS",
+          "endpointURL": "https://service.pdok.nl/lv/bag/wms/v2_0"
         },
-        "dcterms:conformsTo": null,
-        "odrl:hasPolicy": null
+        "conformsTo": null,
+        "hasPolicy": null
       },
       {
-        "type": "dcat:Distribution",
-        "dcterms:title": {
+         "type": "dcat:Distribution",
+        "title": {
           "nl": "BAG download Geopackage"
         },
-        "dcterms:description": {
+        "description": {
           "nl": "accessPoint"
         },
-        "dcat:accessURL": "https://service.pdok.nl/lv/bag/atom/bag.xml",
-        "dcat:mediaType": null,
-        "dcterms:format": null,
-        "dcterms:license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
-        "dcat:accessService": null,
-        "dcterms:conformsTo": null,
-        "odrl:hasPolicy": null
+        "accessURL": "https://service.pdok.nl/lv/bag/atom/bag.xml",
+        "mediaType": null,
+        "format": null,
+        "license": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+        "accessService": null,
+        "conformsTo": null,
+        "hasPolicy": null
       }
     ],
-    "keywords": [
+    "keyword": [
       {
         "nl": "gebouw",
         "en": "building"
@@ -245,99 +267,92 @@
         "nl": "woonplaats"
       }
     ],
-    "dcat:landingPage": [
+    "landingPage": [
       {
         "@id": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/",
-        "rdf:type": "http://xmlns.com/foaf/0.1/Document",
-        "dcterms:description": {
+        "description": {
           "nl": "accessPoint"
         },
-        "dcterms:title": {
+        "title": {
           "nl": "BAG API Individuele Bevragingen"
         }
       },
       {
         "@id": "https://labs.kadaster.nl/cases/bag-ld",
-        "rdf:type": "http://xmlns.com/foaf/0.1/Document",
-        "dcterms:description": {
+        "description": {
           "nl": "accessPoint"
         },
-        "dcterms:title": {
+        "title": {
           "nl": "Linked open data BAG"
         }
       }
     ],
-    "themes": [
+    "theme": [
       {
-        "skos:prefLabel": {
+        "source": "http://data.europa.eu/eli/reg_impl/2023/138/oj",
+        "prefLabel": {
           "nl": "HVD"
         }
       },
       {
-        "skos:prefLabel": {
+        "source": "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021",
+        "prefLabel": {
           "nl": "Geodata"
         }
       },
       {
-        "skos:prefLabel": {
+        "source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/ad",
+        "prefLabel": {
           "nl": "Adressen"
         }
       },
       {
-        "skos:prefLabel": {
+        "source": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/bu",
+        "prefLabel": {
           "nl": "Gebouwen",
           "en": "Buildings"
         }
       },
       {
-        "skos:prefLabel": {
+        "source": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+        "prefLabel": {
           "nl": "Nationaal"
         }
       }
     ],
-    "dqv:hasQualityMeasurement": {
-      "rdf:type": "http://www.w3.org/ns/dqv#QualityMeasurement",
-      "dqv:isMeasurementOf": {
-        "@id": "http://data.europa.eu/930/spatialResolutionAsScale",
-        "rdf:type": "http://www.w3.org/ns/dqv#Metric"
-      },
-      "dqv:value": 0.001
-    },
-    "foaf:isPrimaryTopicOf": {
-      "rdf:type": "http://www.w3.org/ns/dcat#CatalogRecord",
-      "dcterms:identifier": "aa3b5e6e-7baa-40c0-8972-3353e927ec2f",
-      "dcterms:language": "http://publications.europa.eu/resource/authority/language/DUT",
-      "dcterms:modified": "2024-08-26",
-      "dcat:contactPoint": {
-        "rdf:type": "http://www.w3.org/2006/vcard/ns#Individual",
-        "vcard:fn": {
+    "isPrimaryTopicOf": {
+      "type": "http://www.w3.org/ns/dcat#CatalogRecord",
+      "identifier": "aa3b5e6e-7baa-40c0-8972-3353e927ec2f",
+      "language": "http://publications.europa.eu/resource/authority/language/DUT",
+      "modified": "2024-08-26",
+      "contactPoint": {
+        "fn": {
           "nl": "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"
         },
-        "vcard:hasAddress": {
-          "rdf:type": "http://www.w3.org/2006/vcard/ns#Address",
-          "vcard:country-name": "Nederland",
-          "vcard:locality": "Apeldoorn",
-          "vcard:postal-code": "7311 KZ",
-          "vcard:region": "Gelderland",
-          "vcard:street-address": "Hofstraat 110"
+        "hasAddress": {
+          "country-name": "Nederland",
+          "locality": "Apeldoorn",
+          "postal-code": "7311 KZ",
+          "region": "Gelderland",
+          "street-address": "Hofstraat 110"
         },
-        "vcard:hasEmail": "mailto:dpi-gi@kadaster.nl",
-        "vcard:hasURL": "https://www.kadaster.nl",
-        "vcard:organization-name": {
+        "hasEmail": "mailto:dpi-gi@kadaster.nl",
+        "hasURL": "https://www.kadaster.nl",
+        "organization-name": {
           "nl": "Kadaster"
         }
       },
-      "foaf:primaryTopic": "http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66"
+      "primaryTopic": "http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66"
     }
   },
   "links": [
     {
-      "rel": "access",
+      "rel": "describes",
       "href": "https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS",
       "type": null
     },
     {
-      "rel": "access",
+      "rel": "describes",
       "href": "https://service.pdok.nl/lv/bag/atom/bag.xml",
       "type": null
     }
