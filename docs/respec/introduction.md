@@ -14,4 +14,4 @@ Geonovum, in line with its mission, is keen to get the answers; and it seeks to 
 -	Topic #4: Calculation models
 
 
-![n-m](../media/n-m.png)
+![n-m](https://geonovum.github.io/DTaaS-Testbed2/media/n-m.png)

@@ -14,6 +14,12 @@ A respec document reporting the goal and learnings from the Testbed.
 
 https://geonovum.github.io/DTaaS-Testbed2/
 
+### Archimate views of testbed
+
+The solutions that are realized for the testbed are documented in Archimate.
+The archi file can be found in the architectuur folder.
+
+The archimate views can be found here: https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html
 
 ## Wiki
 
