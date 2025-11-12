@@ -18,3 +18,9 @@ Geonovum, in line with its mission, is keen to get the answers; and it seeks to 
 <a href="https://geonovum.github.io/DTaaS-Testbed2/media/n-m.png" target="_blank"><img src="https://geonovum.github.io/DTaaS-Testbed2/media/n-m.png" alt=""></a>
 <figcaption>n..m problem</figcaption>
 </figure>
+
+## Logging and Provenance
+
+Separate from 'Testbed2' we also did a research project on Logging and Provenance for Digital Twin systems.
+
+This report is only available in Dutch.

@@ -7,7 +7,7 @@
 
 ## Archimate
 
-The solutions are documented in [Archimate](https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-be896198ad4447aeb128a1a7ea7c82f1)
+The solutions are documented in <a href="https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-be896198ad4447aeb128a1a7ea7c82f1" target="_blank">Archimate</a>
 
 ## Foundation
 
@@ -46,3 +46,18 @@ The solutions are documented in [Archimate](https://geonovum.github.io/DTaaS-Tes
 ### Model orchestration, status quo
 
 - Avineon/Tensing
+
+## Logging and Provenance
+
+<figure id="r2">
+<a href="https://geonovum.github.io/DTaaS-Testbed2/media/extensie-metadata.drawio.png" target="_blank"><img src="https://geonovum.github.io/DTaaS-Testbed2/media/extensie-metadata.drawio.png" alt=""></a>
+<figcaption>extensions for logging and provenance</figcaption>
+</figure>
+
+[Onderzoek logboek dataverwerkingen voor (geo) objecten](https://geonovum.github.io/logboek-dataverwerkingen-voor-objecten/)
+
+- Imagem
+
+- Tygron
+
+- Nelen & Schuurmans
