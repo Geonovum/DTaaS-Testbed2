@@ -14,4 +14,7 @@ Geonovum, in line with its mission, is keen to get the answers; and it seeks to 
 -	Topic #4: Calculation models
 
 
-![n-m](https://geonovum.github.io/DTaaS-Testbed2/media/n-m.png)
+<figure id="i1">
+<a href="https://geonovum.github.io/DTaaS-Testbed2/media/n-m.png" target="_blank"><img src="https://geonovum.github.io/DTaaS-Testbed2/media/n-m.png" alt=""></a>
+<figcaption>n..m problem</figcaption>
+</figure>

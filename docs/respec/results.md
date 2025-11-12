@@ -1,8 +1,13 @@
 # Results
 
+<figure id="r1">
+<a href="https://geonovum.github.io/DTaaS-Testbed2/media/Testbed_2_Geen_achtergrond_geen_logo.png" target="_blank"><img src="https://geonovum.github.io/DTaaS-Testbed2/media/Testbed_2_Geen_achtergrond_geen_logo.png" alt=""></a>
+<figcaption>resulting ecosystem</figcaption>
+</figure>
+
 ## Archimate
 
-The solutions are documented in [Archimate](https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html)
+The solutions are documented in [Archimate](https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-be896198ad4447aeb128a1a7ea7c82f1)
 
 ## Foundation
 
