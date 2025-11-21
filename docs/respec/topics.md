@@ -23,7 +23,6 @@ Sharing data over secure webservices is a well understood pattern. Recently the 
 
 In this research topic we would like to see a data consumer search, find, negotiate and bind to a dataset in a Dataspace, using Dataspace protocols (or similar, e.g. iShare and or FSC).
 
-> This topic is not addressed during the testbed.
 
 ## Visualization
 
