@@ -41,7 +41,7 @@ Another insight is the fact that a DCAT-AP-NL (as well as an ISO-19115) metadata
 
     Future Insight adapted their existing catalog framework, that already used a different DCAT profile to serve DCAT-AP-NL conform to the OGC API Records interface.
 
- The <a href="https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-e190ac8e3d5e4bc8905d1d92b4ff62da"target="_blank" >archimate view for 'find and bind'</a> documents the interoperable connections that are realized between catalogs and viewers in scope of this testbed.   
+ The <a href="https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-e190ac8e3d5e4bc8905d1d92b4ff62da" target="_blank" >archimate view for 'find and bind'</a> documents the interoperable connections that are realized between catalogs and viewers in scope of this testbed.   
 
 ### Sharing Data under Conditions, from a data consumer perspective (5.2)
 
@@ -54,7 +54,7 @@ Another insight is the fact that a DCAT-AP-NL (as well as an ISO-19115) metadata
 ### Find and Bind (6.1)
 
 All solutions provide integration with one or more catalogues. 
-The <a href="https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-e190ac8e3d5e4bc8905d1d92b4ff62da"target="_blank" >archimate view for 'find and bind'</a> documents the interoperable connections that are realized between catalogs and viewers in scope of this testbed.   
+The <a href="https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-e190ac8e3d5e4bc8905d1d92b4ff62da" target="_blank" >archimate view for 'find and bind'</a> documents the interoperable connections that are realized between catalogs and viewers in scope of this testbed.   
 
 - Analyze
 
@@ -115,7 +115,7 @@ A conversion from IFC to 3D Tiles is demonstrated. In this workflow a selection 
 
 The brief of this topic was to expose already available calculation models from different parties using the OGC API Processes specification. This way the processes can be used in different viewers rather than only be tied to the viewer provided specifically for this calculation model.
 
-The <a href="https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-00e94b953f2b4bf1adb922e3b4f37054"target="_blank">archimate view for 'Making calculation modules interoperable'</a> documents the calculation modules that are realized in scope of this testbed, as well as the viewers that integrated those modules.
+The <a href="https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-00e94b953f2b4bf1adb922e3b4f37054" target="_blank">archimate view for 'Making calculation modules interoperable'</a> documents the calculation modules that are realized in scope of this testbed, as well as the viewers that integrated those modules.
 
 - Analyze
 
