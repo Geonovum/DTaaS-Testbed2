@@ -47,7 +47,8 @@ Another insight is the fact that a DCAT-AP-NL (as well as an ISO-19115) metadata
 
 - Future Insight
 
-    TBD
+   For this topic, a <a href="https://github.com/Geonovum/DTaaS-Testbed2/blob/main/deliverables/Report_Data_Sharing_Under_Conditions.pdf" target="_blank">__report__</a> has been written. It examines three foundational enablers of sovereign and policy-driven data exchange: Data Spaces, the iSHARE trust and authorization framework, and Federated Catalogue Services (FSC). This report synthesizes the functional, technical, governance, and legal requirements necessary to support such controlled data exchange. 
+
 
 ## Visualization
 
@@ -108,6 +109,7 @@ A conversion from IFC to 3D Tiles is demonstrated. In this workflow a selection 
 <figcaption>3D tiles service in a viewer</figcaption>
 </figure>
 
+In addition to the demo, a <a href="https://github.com/Geonovum/DTaaS-Testbed2/blob/main/deliverables/Report_BIM.pdf" target="_blank">__report__</a> has also been written that describes the approach and methodology followed.
 
 ## Calculation models
 
@@ -136,7 +138,7 @@ Also mechanisms to provide information about how parameters can be defined in a 
 
 - Avineon/Tensing
 
-For this topic, a <a href="https://github.com/Geonovum/DTaaS-Testbed2/blob/main/deliverables/DTaas2_Orchestration-Avineon_Tensing.pdf" target="_blank">report</a> has been written. As shown in the picture below, a maturity model is introduced in this report that defines different levels of orchestration.
+For this topic, a <a href="https://github.com/Geonovum/DTaaS-Testbed2/blob/main/deliverables/DTaas2_Orchestration-Avineon_Tensing.pdf" target="_blank">__report__</a> has been written. As shown in the picture below, a maturity model is introduced in this report that defines different levels of orchestration.
 
 <figure id="r8">
 <a href="https://geonovum.github.io/DTaaS-Testbed2/media/orchestration-maturity-model.png" target="_blank"><img src="https://geonovum.github.io/DTaaS-Testbed2/media/orchestration-maturity-model.png" alt=""></a>
