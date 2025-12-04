@@ -23,4 +23,4 @@ Geonovum, in line with its mission, is keen to get the answers; and it seeks to 
 
 Separate from 'Testbed2' we also did a research project on Logging and Provenance for Digital Twin systems.
 
-This report is only available in Dutch.
+This report is only available in Dutch: [Onderzoek logboek dataverwerkingen voor (geo) objecten](https://geonovum.github.io/logboek-dataverwerkingen-voor-objecten/)
