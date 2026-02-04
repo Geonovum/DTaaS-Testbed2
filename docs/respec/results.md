@@ -90,6 +90,8 @@ The requested deliverable was a draft schema/specification of a Export-import sp
 <figcaption>Screenshot of Cesium and esri viewers viewport synchronisation</figcaption>
 </figure>
 
+The report on this topic can be found <a href="https://github.com/Geonovum/DTaaS-Testbed2/blob/main/deliverables/Digital_Twin_as_a_Service–Testbed_II-Import_Export_Scenes.pdf" target="_blank">__here__</a>.
+
 
 ## Data
 
